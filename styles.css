@@ -1209,7 +1209,8 @@ html {
 
   input[type="text"],
   input[type="email"],
-  textarea[id="message"] {
+  textarea[id="message"],
+  select#dropdown {
     width: calc(100% - 20px);
     padding: 10px;
     border: 1px solid #ccc;
@@ -1219,7 +1220,6 @@ html {
 
   input[type="submit"] {
     color: white;
-    /* padding: 20px 0px; */
     border: none;
     border-radius: 5px;
     cursor: pointer;
