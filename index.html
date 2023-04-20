@@ -414,10 +414,10 @@
 
         <div class="content-container">
 
-          <h2 class="section-header">We’re Here to <br />Help You Get Started.</h2>
+          <h2 class="section-header">We are Here to <br />Help You Get Started.</h2>
 
           <p>Connect with our Sales team for one-on-one <br />assistance with getting started.</p>
-          <p class="footnote">We’ll call you within one business day, between 9 a.m. and <br />5 p.m. in your time zone. If we can’t reach you, we’ll send an <br />email with a phone number to call us back.</p>
+          <p class="footnote">We will call you within one business day, between 9 a.m. and <br />5 p.m. in your time zone. If we can’t reach you, we’ll send an <br />email with a phone number to call us back.</p>
           <div class="button-container">
 
             <form onsubmit="downloadInput(event)">
@@ -433,12 +433,12 @@
               <textarea id="message" name="message" required></textarea>
               <div id="messageError" class="error"></div>
 
-              <label for="dropdown">Select Your Country:</label>
-              <select id="dropdown" style="text-align:center; width:100%;" name="dropdown" required="required">
-                <option value="option1">Nigeria</option>
-                <option value="option2">Togo</option>
-                <option value="option3">Ghana</option>
-                <option value="option3">Others</option>
+              <label for="country">Select Your Country:</label>
+              <select id="country" style="text-align:center; width:100%;" name="country" required="required">
+                <option value="Nigeria">Nigeria</option>
+                <option value="Togo">Togo</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Others">Others</option>
               </select>
           
               <input class="action-button primary" type="submit" value="Submit">
@@ -553,6 +553,7 @@
 			overlay.style.display = "none";
 		});
 
+    // Form Validation
 		function downloadInput(event) {
 			event.preventDefault();
 
@@ -560,11 +561,13 @@
 			var name = document.getElementById("name").value;
 			var email = document.getElementById("email").value;
 			var message = document.getElementById("message").value;
+			var country = document.getElementById("country").value;
 
 			// Get error message elements
 			var nameError = document.getElementById("nameError");
 			var emailError = document.getElementById("emailError");
 			var messageError = document.getElementById("messageError");
+			var countryError = document.getElementById("messageError");
 
 			// Define validation constraints
 			var constraints = {
@@ -585,11 +588,14 @@
 						maximum: 25,
 						message: "must not be more than 25 characters."
 					}
+				},
+        country: {
+					presence: true
 				}
 			};
 
 			// Validate form inputs
-			var errors = validate({name: name, email: email, message: message}, constraints);
+			var errors = validate({name: name, email: email, message: message, country: country}, constraints);
 
 			if (errors) {
 				if (errors.name) {
@@ -610,11 +616,17 @@
 					messageError.innerHTML = "";
 				}
 
+        if (errors.country) {
+					messageError.innerHTML = errors.country[0];
+				} else {
+					messageError.innerHTML = "";
+				}
+
 				return false;
 			}
 
 			// Create file content
-			var fileContent = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
+			var fileContent = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message + "\nCountry: " + country;
 
 			// Create file blob
 			var blob = new Blob([fileContent], {type: "text/plain;charset=utf-8"});

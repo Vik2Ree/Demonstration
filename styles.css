@@ -1210,12 +1210,13 @@ html {
   input[type="text"],
   input[type="email"],
   textarea[id="message"],
-  select#dropdown {
+  select#country {
     width: calc(100% - 20px);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 20px;
+    color:#00425F;
   }
 
   input[type="submit"] {
