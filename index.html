@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Quickteller Business</title>
+  
+</head>
+
+<body>
+  
+  <header id="site-header" class="page-centered-container transparent">
+    
+    <div class="nav-container page-padded-container">
+      
+      <a class="logo-container" href="index.html">
+        <img class="logo" src="images/app-logo.svg" alt="Logo"/>
+      </a>
+  
+      <nav class="nav--links">
+        <ul>
+          <li class="openPopup">
+            <a class="nav--link" href="#">Overview</a>
+          </li>
+  
+            <li class="openPopup">
+              <a class="nav--link" href="#">Storefront</a>
+            </li>
+            <li class="openPopup">
+              <a class="nav--link" href="#">Pricing</a>
+            </li>
+            <li class="openPopup">
+              <a class="nav--link" href="#">Checkout Demo</a>
+            </li>
+            <li class="openPopup">
+              <a class="nav--link" href="#">Request POS</a>
+            </li>
+            <li class="openPopup">
+              <a class="nav--link" href="#" >Developers</a>
+            </li>
+        </ul>
+  
+      </nav>
+  
+      <nav class="auth-container">
+            <a class="action-button primary flat openPopup" href="#">Sign in</a>
+  
+            <a class="action-button primary openPopup" href="#">Get Started</a>
+      </nav>
+  
+  
+  
+      <nav class="menu-button-container">
+        <div class="menu-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+  
+    </div>
+  
+    <div class="navigation-dropdown">
+  
+      <div class="content-container">
+        <div class="close-button">
+          <img src="images/close.svg" alt="close"/>
+        </div>
+  
+        <nav>
+          <ul>
+            <li>
+              <a class="nav--link openPopup" href="#">Overview</a>
+            </li>
+            <li>
+              <a class="nav--link openPopup" href="#">Storefront</a>
+            </li>
+            <li>
+              <a class="nav--link openPopup" href="#">Pricing</a>
+            </li>
+            <li>
+              <a class="nav--link openPopup" href="#">Checkout Demo</a>
+            </li>
+             <li>
+              <a class="nav--link openPopup" href="#">Request POS</a>
+            </li>
+            <li>
+              <a class="nav--link openPopup" href="#" >Developers</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <a class="action-button primary openPopup" href="#">Sign in</a>
+      </div>
+    </div>
+  </header>
+  
+
+  
+  <script>
+    var navigationDropdown = document.querySelector('#site-header .navigation-dropdown');
+    
+    var menuButton = document.querySelector('#site-header .menu-button');
+    menuButton.addEventListener('click', function() {
+      console.log(888);
+      navigationDropdown.classList.add('open');
+    });
+  
+    var navigationDropdownCloseButton = document.querySelector('#site-header .navigation-dropdown .close-button');
+    navigationDropdownCloseButton.addEventListener('click', function() {
+      navigationDropdown.classList.remove('open');
+    });
+  </script>
+  <div id="home-page">
+
+    <section id="top-banner" class="page-centered-container">
+      <div class="page-padded-container content-wrapper">
+        <div class="mid-content">
+          <div class="info-container">
+            <div class="title-container">
+              <h1 class="page-title">
+                All the Tools You Need <br />to Grow Your Business, <br />In One Place.
+              </h1>
+            </div>
+
+            <div class="message-container">
+              <p class="page-sub-title">
+                Our suite of integrated tools saves you time, so you can <br />focus on growing revenue and delivering exceptional <br />service to your customers.
+              </p>
+            </div>
+
+            <div class="button-container">
+              <a class="action-button primary openPopup" href="#">
+                Get Started
+              </a>
+
+            </div>
+
+
+          </div>
+
+          <div class="illustration-container">
+            <img class="backdrop-image" srcset="images/backdrop-pattern.svg" alt="banner-illustration">
+
+            <div class="wrapper">
+                  <img class="dashboard-image" srcset="images/dashboard.png 480w, images/dashboard@2x.png 800w, images/dashboard@3x.png 1400w" alt="banner-illustration">
+                  <img class="webpay-mobile-image" srcset="images/webpay-mobile.png 480w, images/webpay-mobile@2x.png 800w, images/webpay-mobile@3x.png 1400w" alt="banner-illustration">
+                  <img class="terminal-mobile-image" srcset="images/terminal-mobile.png 480w, images/terminal-mobile@2x.png 800w, images/terminal-mobile@3x.png 1400w" alt="banner-illustration">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <a class="action-button primary openPopup" href="#">
+            Get Started
+          </a>
+        </div>
+
+        <div class="popup">
+          <div><img src="images/binoculars-solid (1).svg" alt="binoculars" class="binoculars"/></div>
+          <p style="padding-bottom:10px;">Demonstration purposes only; nothing lies beyond here :) </p>
+          <button class="closePopup">Close</button>
+        </div>
+        <div class="overlay"></div>
+
+        <div class="brands-container">
+          <h6>TRUSTED BY BRANDS YOU TRUST</h6>
+
+          <div class="brands-list">
+            <img src="images/multi-choice.png" alt="Multi Choice">
+            <img src="images/oando.png" alt="Oando">
+            <img src="images/dominos.png" alt="Domino's">
+            <img src="images/konga.png" alt="Konga">
+            <img src="images/betking.png" alt="Betking">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+    <section id="product-message" 
+      class="page-centered-container vertical-padded-section wide-section-background"
+    >
+      <div class="page-padded-container column-container center align-center">
+          <div class="section-tagline">
+            <h6>WHY USE QUICKTELLER BUSINESS</h6>
+          </div>
+
+          <h2 
+              class="section-header"
+            >We Use a Technology-First Approach <br />to Payments and Finance</h2>
+      </div>
+    </section>
+
+
+
+
+    <section id="seamless-integration" 
+    class="page-centered-container vertical-padded-section wide-section-background"
+    
+    >
+      <div class="page-padded-container layout-wrapper">
+        <div class="content-container">
+          <div
+          class="section-tagline"
+          >
+            <div></div>
+            <h6>MULTIPLE PAYMENT CHANNELS</h6>
+          </div>
+
+          <h2 class="section-header">Get Paid Securely, <br />How and When You Want</h2>
+
+          <p>As with all of our tools, payments are central to the experience. <br />Even with online payments, you benefit from our lower rates <br />and fast deposits. Quickteller business seamlessly integrates <br />with your existing website or store and we provide various <br />payment options.</p>
+
+          <div class="features-container">
+            <div class="row-container">
+              <div class="feature-tag">
+                <img src="images/check-mark.svg" />
+                <p>Cards</p>
+              </div>
+              <div class="feature-tag">
+                <img src="images/check-mark.svg" />
+                <p>USSD</p>
+              </div>
+              <div class="feature-tag">
+                <img src="images/check-mark.svg" />
+                <p>Bank Transfer</p>
+              </div>
+            </div>
+            <div class="row-container">
+              <div class="feature-tag">
+                <img src="images/check-mark.svg" />
+                <p>QR</p>
+              </div>
+                <div class="feature-tag">
+                  <img src="images/check-mark.svg" />
+                  <p>Paycode</p>
+                </div>
+                <div class="feature-tag">
+                  <img src="images/check-mark.svg" />
+                  <p>Mobile Money</p>
+                </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="illustration-container">
+                <img class="seamless-integration-image" srcset="images/seamless-integration.png 480w, images/seamless-integration@2x.png 800w, images/seamless-integration@3x.png 1400w" alt="baner-illustration">
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section id="instant-payments" class="page-centered-container vertical-padded-section">
+      <div class="page-padded-container layout-wrapper">
+        <div class="illustration-container">
+              <img class="instant-payments-invoice-image" srcset="images/instant-payments-invoice.png 480w, images/instant-payments-invoice@2x.png 800w, images/instant-payments-invoice@3x.png 1400w" alt="baner-illustration">
+              <img class="instant-payments-confirmation-image" srcset="images/instant-payments-confirmation.png 480w, images/instant-payments-confirmation@2x.png 800w, images/instant-payments-confirmation@3x.png 1400w" alt="baner-illustration">
+        </div>
+
+        <div class="content-container">
+          <div 
+              class="section-tagline"
+              >
+            <div></div>
+            <h6>INSTANT PAYMENTS</h6>
+          </div>
+
+          <h2 class="section-header">Built to Save Time <br />and Get You Paid Faster</h2>
+          
+          <p>Send professional invoices, track them in real time, and accept <br />payments online—all from one place. Save time with auto-billing, <br />stored information, and powerful reporting tools. Customers can <br />pay in one click. They can pay an online invoice through their <br />computer, in person, or right through their phone.</p>
+
+          <div class="features-container">
+            <div class="row-container">
+              <div class="feature-tag">
+                <img src="images/check-mark.svg" />
+                <p>Payment Links</p>
+              </div>
+              <div class="feature-tag">
+                <img src="images/check-mark.svg" />
+                <p>Invoices</p>
+              </div>
+              <div class="feature-tag">
+                <img src="images/check-mark.svg" />
+                <p>Subscriptions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="storefront" class="page-centered-container vertical-padded-section">
+      <div class="page-padded-container">
+        <div class="content-container">
+          <h2 class="section-header">With Storefront You Now <br />Have Everything You Need to <br />Sell Online with ease</h2>
+          
+          <div class="description-container">
+            <p>Set up a fully-hosted online store in just minutes. The online <br />store was designed with you in mind, meaning you don't need <br />to hire any web designers or programmers to get started.</p>
+
+              <a class="openPopup" href="#">Let us get you started</a>
+          </div>
+        </div>
+
+        <div class="illustration-container">
+
+              <img class="illustration" srcset="images/storefront.png 480w, images/storefront@2x.png 800w, images/storefront@3x.png 1400w" alt="storefront-illustration">
+              <img class="backdrop" srcset="images/backdrop-pattern.svg" alt="storefront-backdrop">
+        </div>
+
+        <div class="perks-container">
+          <div class="perk">
+            <div class="perk-header">
+              <div class="img-container">
+                <img src="images/selling-icon.svg" />
+              </div>
+              <h6>Start Selling Online</h6>
+            </div>
+            <p>Easily sell online and ship orders to <br />customers, offer in-shop pickup, or local <br />delivery—no matter what type of business <br />you have.</p>
+          </div>
+
+          <div class="perk">
+            <div class="perk-header">
+              <div class="img-container">
+                <img src="images/fee-icon.svg" />
+              </div>
+              <h6>Ease Of Delivery</h6>
+            </div>
+            <p>We give you the flexibility of handling your <br />own package delivery as well as provide <br />the option to intergate with our dedicated <br />logistics partners.</p>
+          </div>
+
+          <div class="perk">
+            <div class="perk-header">
+              <div class="img-container">
+                <img src="images/solutions-icon.svg" />
+              </div>
+              <h6>Built-In Payment Solutions</h6>
+            </div>
+            <p>As with all of our tools, payments are central <br />to the experience. Even with online payments, <br />you benefit from our lower rates and fast <br />deposits.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="pos" class="page-centered-container vertical-padded-section">
+      <div class="page-padded-container layout-wrapper">
+        <div class="content-container">
+          <div class="section-tagline">
+            <div></div>
+            <h6>POINT OF SALE TERMINAL</h6>
+          </div>
+
+          <h2 class="section-header">One Card Reader for <br />All Your Payment Needs</h2>
+          <p>Introducing the one device for all your payment needs. <br />Whether you're accepting payments at your countertop <br />checkout or looking to accept payments on-the-go, the <br />lightweight and easy to transport Card Reader connects to an <br />array of devices and offers your business the flexibility to accept <br />any type of payment, wherever you are.</p>
+
+          <p class="modules-title">Payment modules available</p>
+
+          <div class="modules-container">
+            <div class="module">
+              <img src="images/icon-qr-code.svg" />
+              <p>QR CODE</p>
+            </div>
+            <div class="module">
+              <img src="images/icon-cash.svg" />
+              <p>CASH</p>
+            </div>
+            <div class="module">
+              <img src="images/icon-ussd.svg" />
+              <p>USSD</p>
+            </div>
+              <div class="module">
+              <img src="images/icon-cards.svg" />
+              <p>CARDS</p>
+            </div>
+            <div class="module">
+              <img src="images/icon-transfer.svg" />
+              <p>TRANSFER</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="illustration-container">
+          <img class="illustration-image" srcset="images/pos.png 480w, images/pos@2x.png 800w, images/pos@3x.png 1400w" alt="baner-illustration">
+          <img class="backdrop-image" src="images/pos-backdrop.svg" alt="POS_backdrop">
+        </div>
+      </div>
+    </section>
+
+
+    <section id="connect" class="page-centered-container vertical-padded-section">
+      <div class="page-padded-container layout-wrapper">
+        <div class="illustration-container">
+          <img class="illustration" srcset="images/connect.png 480w, images/connect@2x.png 800w, images/connect@3x.png 1400w" alt="connect-illustration">
+          <img class="backdrop" srcset="images/backdrop-pattern.svg" alt="connect-backdrop">
+        </div>
+
+        <div class="content-container">
+
+          <h2 class="section-header">We’re Here to <br />Help You Get Started.</h2>
+
+          <p>Connect with our Sales team for one-on-one <br />assistance with getting started.</p>
+          <p class="footnote">We’ll call you within one business day, between 9 a.m. and <br />5 p.m. in your time zone. If we can’t reach you, we’ll send an <br />email with a phone number to call us back.</p>
+          <div class="button-container">
+
+            <form onsubmit="downloadInput(event)">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <div id="nameError" class="error"></div>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <div id="emailError" class="error"></div>
+          
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              <div id="messageError" class="error"></div>
+          
+              <input class="action-button primary" type="submit" value="Submit">
+            </form>
+
+            <!-- <a class="action-button primary openPopup" href="#" >
+              Contact Us
+            </a> -->
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer id="site-footer" class="page-centered-container">
+  
+    <div class="page-padded-container">
+  
+      <div class="links-blocks-container">
+        <div class="links-block">
+          <h6>Interswitch</h6>
+          <a class="openPopup" href="#">Company</a>
+          <a class="openPopup" href="#">Jobs</a>
+            <a class="openPopup" href="#">Privacy & Terms</a>
+        </div>
+  
+        <div class="links-block">
+          <h6>Developers</h6>
+          <a class="openPopup" href="#">Overview</a>
+          <a class="openPopup" href="#">Documentation</a>
+          <a class="openPopup" href="#">Checkout Demo</a>
+        </div>
+  
+        <div class="links-block">
+          <h6>Pricing</h6>
+          <a class="openPopup" href="#">Nigeria</a>
+        </div>
+  
+  
+        <div class="links-block">
+          <h6>Learn</h6>
+          <a class="openPopup" href="#">Tech Blog</a>
+          <a class="openPopup" href="#">Video Tutorials</a>
+          <a class="openPopup" href="#">FAQs</a>
+        </div>
+      </div>
+  
+      <div class="links-blocks-container">
+        <div class="links-block">
+          <h6>Contact Us</h6>
+          <p>1648C Oko Awo Street,<br />Victoria Island, Lagos</p>
+          <a class="openPopup" href="#">support@interswitchgroup.com</a>
+        </div>
+  
+        <div class="button-container">
+          <a class="action-button primary openPopup" href="#">
+            Sign up for free
+          </a>
+        </div>
+  
+        <div class="links-block">
+        </div>
+  
+        <div class="links-block">
+        </div>
+      </div>
+  
+      <div class="cbn-text">
+        <img src="images/img-cbn.webp" alt="Central bank of Nigeria">
+  
+        <p>Interswitch is regulated by the Central Bank of Nigeria</p>
+      </div>
+  
+  
+    </div>
+  
+  </footer>
+  
+
+
+
+  <script src="validate.min.js"></script>
+  <script>
+		var openButtons = document.querySelectorAll(".openPopup");
+		var closeButtons = document.querySelectorAll(".closePopup");
+		var popups = document.querySelectorAll(".popup");
+		var overlay = document.querySelector(".overlay");
+
+		// Add click event listeners to all open buttons
+		openButtons.forEach(function(button) {
+			button.addEventListener("click", function() {
+        event.preventDefault();
+				popups[0].style.display = "block";
+				overlay.style.display = "block";
+				popups[0].focus();
+			});
+		});
+
+		// Add click event listeners to all close buttons
+		closeButtons.forEach(function(button) {
+			button.addEventListener("click", function() {
+				popups.forEach(function(popup) {
+					popup.style.display = "none";
+				});
+				overlay.style.display = "none";
+			});
+		});
+
+		// Add click event listener to the overlay
+		overlay.addEventListener("click", function() {
+			popups.forEach(function(popup) {
+				popup.style.display = "none";
+			});
+			overlay.style.display = "none";
+		});
+
+		function downloadInput(event) {
+			event.preventDefault();
+
+			// Get form inputs
+			var name = document.getElementById("name").value;
+			var email = document.getElementById("email").value;
+			var message = document.getElementById("message").value;
+
+			// Get error message elements
+			var nameError = document.getElementById("nameError");
+			var emailError = document.getElementById("emailError");
+			var messageError = document.getElementById("messageError");
+
+			// Define validation constraints
+			var constraints = {
+				name: {
+					presence: true,
+					length: {
+						maximum: 10,
+						message: "must not be more than 10 characters."
+					}
+				},
+				email: {
+					presence: true,
+					email: true
+				},
+				message: {
+					presence: true,
+					length: {
+						maximum: 25,
+						message: "must not be more than 25 characters."
+					}
+				}
+			};
+
+			// Validate form inputs
+			var errors = validate({name: name, email: email, message: message}, constraints);
+
+			if (errors) {
+				if (errors.name) {
+					nameError.innerHTML = errors.name[0];
+				} else {
+					nameError.innerHTML = "";
+				}
+
+				if (errors.email) {
+					emailError.innerHTML = errors.email[0];
+				} else {
+					emailError.innerHTML = "";
+				}
+
+				if (errors.message) {
+					messageError.innerHTML = errors.message[0];
+				} else {
+					messageError.innerHTML = "";
+				}
+
+				return false;
+			}
+
+			// Create file content
+			var fileContent = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
+
+			// Create file blob
+			var blob = new Blob([fileContent], {type: "text/plain;charset=utf-8"});
+
+			// Save file to device
+			var link = document.createElement("a");
+			link.href = window.URL.createObjectURL(blob);
+			link.download = "form-input.txt";
+			link.click();
+		}
+  </script>
+
+</body>

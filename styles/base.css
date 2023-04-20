@@ -1,0 +1,73 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0px;
+}
+
+* {
+  font-family: PTSans, sans-serif;
+  letter-spacing: 1.3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.3rem;
+  line-height: 40px;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 0px;
+  line-height: 2.8rem;
+}
+
+a {
+  font-size: 1.6rem;
+  color: #00425F;
+}
+
+img {
+  transform: translateZ(0px);
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PTSans/PTSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PTSans/PTSans-Italic.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PTSans/PTSans-BoldItalic.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url('../fonts/PTSans/PTSans-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}

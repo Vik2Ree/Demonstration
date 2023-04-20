@@ -1,0 +1,26 @@
+:root {
+  --page-max-width: 1300px;
+  
+  --page-side-padding: 40px;
+  --page-side-padding-mobile: 30px;
+
+  --primary-color: #009fe4;
+  --primary-whitelabel-color: #da291c;
+
+  --header-text-color: #00425F;
+  --primary-background-color: #01354b;
+
+  --header-text-whitelabel-color: #878785;
+
+  --header-height: 70px;
+
+  /* buttons styling */
+  --button-border-radius: 2px;
+
+  /* responsive screen size brackets */
+  --screen-size-xs: 480px;
+  --screen-size-s: 768px;
+  --screen-size-m: 992px;
+  --screen-size-l: 1200px;
+  --screen-size-xl: 1440px;
+}
