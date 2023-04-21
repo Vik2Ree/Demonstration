@@ -519,34 +519,28 @@
   <script>
 		var openButtons = document.querySelectorAll(".openPopup");
 		var closeButtons = document.querySelectorAll(".closePopup");
-		var popups = document.querySelectorAll(".popup");
+		var popup = document.querySelector(".popup");
 		var overlay = document.querySelector(".overlay");
 
 		// Add click event listeners to all open buttons
 		openButtons.forEach(function(button) {
 			button.addEventListener("click", function() {
         event.preventDefault();
-				popups[0].style.display = "block";
+				popup.style.display = "block";
 				overlay.style.display = "block";
-				popups[0].focus();
+				popup.focus();
 			});
 		});
 
-		// Add click event listeners to all close buttons
-		closeButtons.forEach(function(button) {
-			button.addEventListener("click", function() {
-				popups.forEach(function(popup) {
-					popup.style.display = "none";
-				});
+		// Add click event listener to all close button
+			closeButton.addEventListener("click", function() {
+				popup.style.display = "none";
 				overlay.style.display = "none";
 			});
-		});
 
 		// Add click event listener to the overlay
 		overlay.addEventListener("click", function() {
-			popups.forEach(function(popup) {
-				popup.style.display = "none";
-			});
+			popup.style.display = "none";
 			overlay.style.display = "none";
 		});
 
