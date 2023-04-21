@@ -1,5 +1,5 @@
 var openButtons = document.querySelectorAll(".openPopup");
-var closeButtons = document.querySelectorAll(".closePopup");
+var closeButton = document.querySelectorAll(".closePopup");
 var popup = document.querySelector(".popup");
 var overlay = document.querySelector(".overlay");
 
