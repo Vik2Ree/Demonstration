@@ -9,6 +9,7 @@ html {
   * {
     font-family: PTSans, sans-serif;
     letter-spacing: 1.3px;
+    word-spacing: 1.5px;
   }
   
   h1,
@@ -1096,7 +1097,7 @@ html {
   @media (min-width: 480px) {
     #home-page #connect .layout-wrapper {
       flex-direction: row;
-      align-items: flex-end;
+      align-items: center;
     }
   }
 
