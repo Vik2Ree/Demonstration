@@ -10,493 +10,144 @@
   <link rel="stylesheet" href="styles.css" />
 
   <title>Quickteller Business</title>
-  
+
 </head>
 
 <body>
-  
-  <header id="site-header" class="page-centered-container transparent">
-    
-    <div class="nav-container page-padded-container">
-      
-      <a class="logo-container" href="index.html">
-        <img class="logo" src="images/app-logo.svg" alt="Logo"/>
-      </a>
-  
-      <nav class="nav--links">
-        <ul>
-          <li class="openPopup">
-            <a class="nav--link" href="#">Overview</a>
-          </li>
-  
-            <li class="openPopup">
-              <a class="nav--link" href="#">Storefront</a>
-            </li>
-            <li class="openPopup">
-              <a class="nav--link" href="#">Pricing</a>
-            </li>
-            <li class="openPopup">
-              <a class="nav--link" href="#">Checkout Demo</a>
-            </li>
-            <li class="openPopup">
-              <a class="nav--link" href="#">Request POS</a>
-            </li>
-            <li class="openPopup">
-              <a class="nav--link" href="#" >Developers</a>
-            </li>
-        </ul>
-  
-      </nav>
-  
-      <nav class="auth-container">
-            <a class="action-button primary flat openPopup" href="#">Sign in</a>
-  
-            <a class="action-button primary openPopup" href="#">Get Started</a>
-      </nav>
-  
-  
-  
-      <nav class="menu-button-container">
-        <div class="menu-button">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </nav>
-  
+    <div class="popup">
+        <div><img src="images/binoculars-solid.svg" alt="binoculars" class="binoculars"/></div>
+        <p style="padding-bottom:10px;">Demonstration purposes only; nothing lies beyond here :) </p>
+        <button class="close-popup">Close</button>
     </div>
-  
-    <div class="navigation-dropdown">
-  
-      <div class="content-container">
-        <div class="close-button">
-          <img src="images/close.svg" alt="close"/>
-        </div>
-  
-        <nav>
-          <ul>
-            <li>
-              <a class="nav--link openPopup" href="#">Overview</a>
-            </li>
-            <li>
-              <a class="nav--link openPopup" href="#">Storefront</a>
-            </li>
-            <li>
-              <a class="nav--link openPopup" href="#">Pricing</a>
-            </li>
-            <li>
-              <a class="nav--link openPopup" href="#">Checkout Demo</a>
-            </li>
-             <li>
-              <a class="nav--link openPopup" href="#">Request POS</a>
-            </li>
-            <li>
-              <a class="nav--link openPopup" href="#" >Developers</a>
-            </li>
-          </ul>
-        </nav>
-  
-        <a class="action-button primary openPopup" href="#">Sign in</a>
-      </div>
-    </div>
-  </header>
-  
-  <div id="home-page">
+    <div class="overlay"></div>
 
-    <section id="top-banner" class="page-centered-container">
-      <div class="page-padded-container content-wrapper">
-        <div class="mid-content">
-          <div class="info-container">
-            <div class="title-container">
-              <h1 class="page-title">
-                All the Tools You Need <br />to Grow Your Business, <br />In One Place.
-              </h1>
+    <div class="flex-container">
+        <div class="flex-item-1 center">
+            <div class="pos-description">
+                <h1 style="font-size:2.7em;">More Than a POS Terminal</h1>
+                <p>Introducing the one device for all your payment needs and more.</p>
             </div>
 
-            <div class="message-container">
-              <p class="page-sub-title">
-                Our suite of integrated tools saves you time, so you can <br />focus on growing revenue and delivering exceptional <br />service to your customers.
-              </p>
-            </div>
-
-            <div class="button-container">
-              <a class="action-button primary openPopup" href="#">
-                Get Started
-              </a>
-
-            </div>
-
-
-          </div>
-
-          <div class="illustration-container">
-            <img class="backdrop-image" srcset="images/backdrop-pattern.svg" alt="banner-illustration">
-
-            <div class="wrapper">
-                  <img class="dashboard-image" srcset="images/dashboard.png 480w, images/dashboard@2x.png 800w, images/dashboard@3x.png 1400w" alt="banner-illustration">
-                  <img class="webpay-mobile-image" srcset="images/webpay-mobile.png 480w, images/webpay-mobile@2x.png 800w, images/webpay-mobile@3x.png 1400w" alt="banner-illustration">
-                  <img class="terminal-mobile-image" srcset="images/terminal-mobile.png 480w, images/terminal-mobile@2x.png 800w, images/terminal-mobile@3x.png 1400w" alt="banner-illustration">
-
-            </div>
-          </div>
-        </div>
-
-        <div class="button-container">
-          <a class="action-button primary openPopup" href="#">
-            Get Started
-          </a>
-        </div>
-
-        <div class="popup">
-          <div><img src="images/binoculars-solid (1).svg" alt="binoculars" class="binoculars"/></div>
-          <p style="padding-bottom:10px;">Demonstration purposes only; nothing lies beyond here :) </p>
-          <button class="closePopup">Close</button>
-        </div>
-        <div class="overlay"></div>
-
-        <div class="brands-container">
-          <h6>TRUSTED BY BRANDS YOU TRUST</h6>
-
-          <div class="brands-list">
-            <img src="images/multi-choice.png" alt="Multi Choice">
-            <img src="images/oando.png" alt="Oando">
-            <img src="images/dominos.png" alt="Domino's">
-            <img src="images/konga.png" alt="Konga">
-            <img src="images/betking.png" alt="Betking">
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-
-
-
-    <section id="product-message" 
-      class="page-centered-container vertical-padded-section wide-section-background"
-    >
-      <div class="page-padded-container column-container center align-center">
-          <div class="section-tagline">
-            <h6>WHY USE QUICKTELLER BUSINESS</h6>
-          </div>
-
-          <h2 
-              class="section-header"
-            >We Use a Technology-First Approach <br />to Payments and Finance</h2>
-      </div>
-    </section>
-
-
-
-
-    <section id="seamless-integration" 
-    class="page-centered-container vertical-padded-section wide-section-background"
-    
-    >
-      <div class="page-padded-container layout-wrapper">
-        <div class="content-container">
-          <div
-          class="section-tagline"
-          >
-            <div></div>
-            <h6>MULTIPLE PAYMENT CHANNELS</h6>
-          </div>
-
-          <h2 class="section-header">Get Paid Securely, <br />How and When You Want</h2>
-
-          <p>As with all of our tools, payments are central to the experience. <br />Even with online payments, you benefit from our lower rates <br />and fast deposits. Quickteller business seamlessly integrates <br />with your existing website or store and we provide various <br />payment options.</p>
-
-          <div class="features-container">
-            <div class="row-container">
-              <div class="feature-tag">
-                <img src="images/check-mark.svg" />
-                <p>Cards</p>
-              </div>
-              <div class="feature-tag">
-                <img src="images/check-mark.svg" />
-                <p>USSD</p>
-              </div>
-              <div class="feature-tag">
-                <img src="images/check-mark.svg" />
-                <p>Bank Transfer</p>
-              </div>
-            </div>
-            <div class="row-container">
-              <div class="feature-tag">
-                <img src="images/check-mark.svg" />
-                <p>QR</p>
-              </div>
-                <div class="feature-tag">
-                  <img src="images/check-mark.svg" />
-                  <p>Paycode</p>
+            <div class="pos-image-container">
+                <div class="content">
+                    <img class="pos-img" srcset="images/pos.png 480w, images/pos2.png 800w, images/pos3.png 1400w" alt="POS-image">
+                    <img class="pos-deco" src="images/pos-deco.svg" alt="img-deco">
                 </div>
-                <div class="feature-tag">
-                  <img src="images/check-mark.svg" />
-                  <p>Mobile Money</p>
+            </div>
+
+            <div class="payment-method-container">
+                <p>AVAILABLE PAYMENT METHODS:</p>
+
+                <div class="methods-container">
+                    <div>
+                        <div class="qr-method-image-container">
+                            <img src="images/qr-code.svg" />
+                        </div>
+                        <p>QR</p>
+                    </div>
+                    <div>
+                        <div class="cards-method-image-container">
+                            <img src="images/cards.svg" />
+                        </div>
+                        <p>CARDS</p>
+                    </div>
+                    <div>
+                        <div class="ussd-method-image-container">
+                            <img src="images/ussd.svg" />
+                        </div>
+                        <p>USSD</p>
+                    </div>
+                    <div>
+                        <div class="transfer-method-image-container">
+                            <img src="images/transfer.svg" />
+                        </div>
+                        <p>TRANSFER</p>
+                    </div>
+                    <div>
+                        <div class="paycode-method-image-container">
+                            <img src="images/paycode.svg" />
+                        </div>
+                        <p>PAYCODE</p>
+                    </div>
                 </div>
-
             </div>
-          </div>
         </div>
 
-        <div class="illustration-container">
-                <img class="seamless-integration-image" srcset="images/seamless-integration.png 480w, images/seamless-integration@2x.png 800w, images/seamless-integration@3x.png 1400w" alt="baner-illustration">
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <section id="instant-payments" class="page-centered-container vertical-padded-section">
-      <div class="page-padded-container layout-wrapper">
-        <div class="illustration-container">
-              <img class="instant-payments-invoice-image" srcset="images/instant-payments-invoice.png 480w, images/instant-payments-invoice@2x.png 800w, images/instant-payments-invoice@3x.png 1400w" alt="baner-illustration">
-              <img class="instant-payments-confirmation-image" srcset="images/instant-payments-confirmation.png 480w, images/instant-payments-confirmation@2x.png 800w, images/instant-payments-confirmation@3x.png 1400w" alt="baner-illustration">
-        </div>
-
-        <div class="content-container">
-          <div 
-              class="section-tagline"
-              >
-            <div></div>
-            <h6>INSTANT PAYMENTS</h6>
-          </div>
-
-          <h2 class="section-header">Built to Save Time <br />and Get You Paid Faster</h2>
-          
-          <p>Send professional invoices, track them in real time, and accept <br />payments online—all from one place. Save time with auto-billing, <br />stored information, and powerful reporting tools. Customers can <br />pay in one click. They can pay an online invoice through their <br />computer, in person, or right through their phone.</p>
-
-          <div class="features-container">
-            <div class="row-container">
-              <div class="feature-tag">
-                <img src="images/check-mark.svg" />
-                <p>Payment Links</p>
-              </div>
-              <div class="feature-tag">
-                <img src="images/check-mark.svg" />
-                <p>Invoices</p>
-              </div>
-              <div class="feature-tag">
-                <img src="images/check-mark.svg" />
-                <p>Subscriptions</p>
-              </div>
+        <div class="flex-item-2">
+            <div class="center">
+                <h2>Your Smart POS is Just a Few Clicks Away</h2>
+                <p>Let us help you kick-start the journey that's beyond collecting payments, please share your details here.</p>
             </div>
-          </div>
+            <form onsubmit="downloadInput(event)">
+                <div class="first-name-container">
+                    <label for="firstName">First Name</label>
+                    <input placeholder="First Name" type="text" id="firstName" name="firstName" required />
+                    <div id="firstNameError" class="error"></div>
+                </div>
+                <div class="last-name-container">
+                    <label for="lastName">Last Name</label>
+                    <input placeholder="Last Name" type="text" id="lastName" name="lastName" required />
+                    <div id="lastNameError" class="error"></div>
+                </div>
+                <div class="email-container">
+                    <label for="email">Your Email Address</label>
+                    <input placeholder="Email" type="email" id="email" name="email" required />
+                    <div id="emailError" class="error"></div>
+                </div>
+                <div class="phone-container">
+                    <label for="phone">Phone Number</label>
+                    <input placeholder="Phone Number" type="tel" id="phone" name="phone" required />
+                    <div id="phoneError" class="error"></div>
+                </div>
+                <div class="location-container">
+                    <label for="location">Where do you sell?</label>
+                    <select id="location" name="location" required >
+                        <option value="" selected>-select-</option>
+                        <option value="online">Online</option>
+                        <option value="offline">Offline</option>
+                        <option value="both">Both</option>
+                    </select>
+                    <div id="locationError" class="error"></div>
+                </div>
+                <div class="business-type-container">
+                    <label for="businessType">Business Type</label>
+                    <select id="businessType" name="businessType">
+                        <option value="" selected><b>-select-</b></option>
+                        <option value="online">Online</option>
+                        <option value="offline">Offline</option>
+                        <option value="both">Both</option>
+                    </select>
+                    <div id="businessTypeError" class="error"></div>
+                </div>
+              
+                <div class="monthly-sales-container">
+                    <label for="monthlySales">Average Monthly Sales/Turnover</label>
+                    <select id="monthlySales" name="monthlySales">
+                        <option value="" selected>-select-</option>
+                        <option value="above50k">Above 50,000</option>
+                        <option value="below50k">Below 50,000</option>
+                        <option value="unsure">Not Sure</option>
+                    </select>
+                    <div id="monthlySalesError" class="error"></div>
+                </div>
+                <div class="radio">
+                    <label style="margin-bottom:28px;">Will you be interested in integrating a business management software?</label><br />
+                    <input type="radio" id="yes" name="interested" value="Yes" required/>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" name="interested" value="No">
+                    <label for="no">No</label><br>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" value="agreed" required/>
+                    <label for="privacyPolicy">I <b>Agree</b> to the Quickteller Business' <a class="open-popup" href="#">Privacy Policy</a></label><br>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
         </div>
-      </div>
-    </section>
-
-
-
-    <section id="storefront" class="page-centered-container vertical-padded-section">
-      <div class="page-padded-container">
-        <div class="content-container">
-          <h2 class="section-header">With Storefront You Now <br />Have Everything You Need to <br />Sell Online with ease</h2>
-          
-          <div class="description-container">
-            <p>Set up a fully-hosted online store in just minutes. The online <br />store was designed with you in mind, meaning you don't need <br />to hire any web designers or programmers to get started.</p>
-
-              <a class="openPopup" href="#">Let us get you started</a>
-          </div>
-        </div>
-
-        <div class="illustration-container">
-
-              <img class="illustration" srcset="images/storefront.png 480w, images/storefront@2x.png 800w, images/storefront@3x.png 1400w" alt="storefront-illustration">
-              <img class="backdrop" srcset="images/backdrop-pattern.svg" alt="storefront-backdrop">
-        </div>
-
-        <div class="perks-container">
-          <div class="perk">
-            <div class="perk-header">
-              <div class="img-container">
-                <img src="images/selling-icon.svg" />
-              </div>
-              <h6>Start Selling Online</h6>
-            </div>
-            <p>Easily sell online and ship orders to <br />customers, offer in-shop pickup, or local <br />delivery—no matter what type of business <br />you have.</p>
-          </div>
-
-          <div class="perk">
-            <div class="perk-header">
-              <div class="img-container">
-                <img src="images/fee-icon.svg" />
-              </div>
-              <h6>Ease Of Delivery</h6>
-            </div>
-            <p>We give you the flexibility of handling your <br />own package delivery as well as provide <br />the option to intergate with our dedicated <br />logistics partners.</p>
-          </div>
-
-          <div class="perk">
-            <div class="perk-header">
-              <div class="img-container">
-                <img src="images/solutions-icon.svg" />
-              </div>
-              <h6>Built-In Payment Solutions</h6>
-            </div>
-            <p>As with all of our tools, payments are central <br />to the experience. Even with online payments, <br />you benefit from our lower rates and fast <br />deposits.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section id="pos" class="page-centered-container vertical-padded-section">
-      <div class="page-padded-container layout-wrapper">
-        <div class="content-container">
-          <div class="section-tagline">
-            <div></div>
-            <h6>POINT OF SALE TERMINAL</h6>
-          </div>
-
-          <h2 class="section-header">One Card Reader for <br />All Your Payment Needs</h2>
-          <p>Introducing the one device for all your payment needs. <br />Whether you're accepting payments at your countertop <br />checkout or looking to accept payments on-the-go, the <br />lightweight and easy to transport Card Reader connects to an <br />array of devices and offers your business the flexibility to accept <br />any type of payment, wherever you are.</p>
-
-          <p class="modules-title">Payment modules available</p>
-
-          <div class="modules-container">
-            <div class="module">
-              <img src="images/icon-qr-code.svg" />
-              <p>QR CODE</p>
-            </div>
-            <div class="module">
-              <img src="images/icon-cash.svg" />
-              <p>CASH</p>
-            </div>
-            <div class="module">
-              <img src="images/icon-ussd.svg" />
-              <p>USSD</p>
-            </div>
-              <div class="module">
-              <img src="images/icon-cards.svg" />
-              <p>CARDS</p>
-            </div>
-            <div class="module">
-              <img src="images/icon-transfer.svg" />
-              <p>TRANSFER</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="illustration-container">
-          <img class="illustration-image" srcset="images/pos.png 480w, images/pos@2x.png 800w, images/pos@3x.png 1400w" alt="baner-illustration">
-          <img class="backdrop-image" src="images/pos-backdrop.svg" alt="POS_backdrop">
-        </div>
-      </div>
-    </section>
-
-
-    <section id="connect" class="page-centered-container vertical-padded-section">
-      <div class="page-padded-container layout-wrapper">
-        <div class="illustration-container">
-          <img class="illustration" srcset="images/connect.png 480w, images/connect@2x.png 800w, images/connect@3x.png 1400w" alt="connect-illustration">
-          <img class="backdrop" srcset="images/backdrop-pattern.svg" alt="connect-backdrop">
-        </div>
-
-        <div class="content-container">
-
-          <h2 class="section-header">We are Here to <br />Help You Get Started.</h2>
-
-          <p>Connect with our Sales team for one-on-one <br />assistance with getting started.</p>
-          <p class="footnote">We will call you within one business day, between 9 a.m. and <br />5 p.m. in your time zone. If we cannot reach you, we will send an <br />email with a phone number to call us back.</p>
-
-          <form onsubmit="downloadInput(event)">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <div id="nameError" class="error"></div>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <div id="emailError" class="error"></div>
-        
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <div id="messageError" class="error"></div>
-
-            <label for="country">Select Your Country:</label>
-            <select id="country" style="text-align:center; width:100%;" name="country" required="required">
-              <option value="Nigeria">Nigeria</option>
-              <option value="Togo">Togo</option>
-              <option value="Ghana">Ghana</option>
-              <option value="Others">Others</option>
-            </select>
-        
-            <input class="action-button primary" type="submit" value="Submit">
-          </form>
-
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <footer id="site-footer" class="page-centered-container">
-  
-    <div class="page-padded-container">
-  
-      <div class="links-blocks-container">
-        <div class="links-block">
-          <h6>Interswitch</h6>
-          <a class="openPopup" href="#">Company</a>
-          <a class="openPopup" href="#">Jobs</a>
-            <a class="openPopup" href="#">Privacy & Terms</a>
-        </div>
-  
-        <div class="links-block">
-          <h6>Developers</h6>
-          <a class="openPopup" href="#">Overview</a>
-          <a class="openPopup" href="#">Documentation</a>
-          <a class="openPopup" href="#">Checkout Demo</a>
-        </div>
-  
-        <div class="links-block">
-          <h6>Pricing</h6>
-          <a class="openPopup" href="#">Nigeria</a>
-        </div>
-  
-  
-        <div class="links-block">
-          <h6>Learn</h6>
-          <a class="openPopup" href="#">Tech Blog</a>
-          <a class="openPopup" href="#">Video Tutorials</a>
-          <a class="openPopup" href="#">FAQs</a>
-        </div>
-      </div>
-  
-      <div class="links-blocks-container">
-        <div class="links-block">
-          <h6>Contact Us</h6>
-          <p>1648C Oko Awo Street,<br />Victoria Island, Lagos</p>
-          <a class="openPopup" href="#">support@interswitchgroup.com</a>
-        </div>
-  
-        <div class="button-container">
-          <a class="action-button primary openPopup" href="#">
-            Sign up for free
-          </a>
-        </div>
-  
-        <div class="links-block">
-        </div>
-  
-        <div class="links-block">
-        </div>
-      </div>
-  
-      <div class="cbn-text">
-        <img src="images/img-cbn.webp" alt="Central bank of Nigeria">
-  
-        <p>Interswitch is regulated by the Central Bank of Nigeria</p>
-      </div>
-  
-  
     </div>
-  
-  </footer>
 
-  <script src="validate.min.js"></script>
-  <script src="index.js"></script>
-
+    <script src="validate.min.js"></script>
+    <script src="index.js"></script>
 </body>
+
+</html>
