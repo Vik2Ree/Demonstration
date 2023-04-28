@@ -51,23 +51,14 @@ function downloadInput(event) {
     var constraints = {
         firstName: {
             presence: true,
-            length: {
-                maximum: 10,
-                message: "must not be more than 10 characters."
-            }
         },        
         
         lastName: {
             presence: true,
-            length: {
-                maximum: 10,
-                message: "must not be more than 10 characters."
-            }
         },
 
         email: {
             presence: true,
-            email: true
         },
 
         phone: {

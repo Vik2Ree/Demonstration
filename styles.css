@@ -261,6 +261,10 @@ a.popup-open:hover {
   text-decoration: underline;
 }
 
+h1,h2,p,div {
+    color: #00425F;
+}
+
 @font-face {
   font-family: 'cera';
   src: url('fonts/cerapro/cerapro-regular-webfont.woff2') format('woff2'),
